@@ -1,0 +1,46 @@
+.appointment-card {
+  border-radius: 12px;
+  padding: 1em;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  margin-bottom: 1rem;
+  flex: 1 1 250px; 
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+
+.appointment-card.default {
+  background-color: #E7EAFE;
+  color: #2C2C5C;
+}
+
+.appointment-card.purple {
+  background-color: #4B3DFE;
+  color: #fff;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.icon {
+  font-size: 1.2em;
+}
+
+.card-details p {
+  margin: 0.2em 0;
+}
+
+.calendar-appointments {
+  margin-top: 2em;
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+  /* Make sure it takes full width */
+  width: 100%;
+  justify-content: flex-start; /* or center, or space-between as you want */
+}

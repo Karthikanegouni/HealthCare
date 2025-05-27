@@ -1,0 +1,79 @@
+.calendar-view {
+  background-color: #f5f7fe;
+  padding: 2em;
+  border-radius: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calendar-nav span {
+  margin: 0 0.5em;
+  cursor: pointer;
+}
+
+.calendar-grid {
+  display: flex;
+  margin-top: 1.5em;
+  gap: 1em;
+  width: 100%;       /* ensure full width */
+}
+
+.calendar-day {
+  flex: 1;           /* make each day share equal width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+  gap: 0.5em;
+  min-width: 0;      /* prevents overflow issues */
+}
+
+.day-label {
+  font-weight: bold;
+}
+
+.date-label {
+  margin-bottom: 0.5em;
+  font-size: 14px;
+}
+
+.time-slot {
+  padding: 0.3em 0.6em;
+  background-color: transparent;
+  border-radius: 8px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.time-slot.active {
+  background-color: #D8D8F2;
+  color: #333;
+}
+
+.calendar-appointments {
+  margin-top: 2em;
+  display: flex;
+  gap: 1em;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .calendar-grid {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;     
+  }
+
+  .calendar-day {
+    flex: none;      
+    width: 90px;      
+  }
+}

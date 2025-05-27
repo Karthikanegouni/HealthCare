@@ -1,0 +1,114 @@
+.activity-container {
+  padding: 1rem;
+  background-color: #f5f8fc;
+  border-radius: 12px;
+}
+
+.activity-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.activity-header h4 {
+  margin: 0;
+  font-size: 1rem;
+  color: #2e2e96;
+}
+
+.activity-header p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #999;
+}
+
+/* Make this container horizontally scrollable on small screens */
+.activity-bars {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 0.75rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #ccc transparent;
+}
+
+.activity-bars::-webkit-scrollbar {
+  height: 6px;
+}
+
+.activity-bars::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 3px;
+}
+
+.bar-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 32px; /* to keep day label readable */
+  flex-shrink: 0; /* prevent shrinking on scroll */
+}
+
+.bars {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+}
+
+.bar {
+  width: 5px;
+  border-radius: 3px;
+  transition: height 0.3s ease; /* smooth height changes if dynamic */
+}
+
+.bar.gray {
+  background-color: #dcdfe5;
+}
+
+.bar.purple {
+  background-color: #2f2782;
+}
+
+.bar.cyan {
+  background-color: #01d1e6;
+}
+
+.day-label {
+  font-size: 0.8rem;
+  color: #888;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .activity-container {
+    padding: 0.75rem;
+  }
+
+  .activity-header h4 {
+    font-size: 0.9rem;
+  }
+
+  .activity-header p {
+    font-size: 0.85rem;
+  }
+
+  /* On mobile, keep horizontal scroll, add spacing */
+  .activity-bars {
+    gap: 1rem;
+  }
+
+  .bar-column {
+    min-width: 36px;
+  }
+
+  .bar {
+    width: 6px;
+  }
+
+  .day-label {
+    font-size: 0.75rem;
+  }
+}

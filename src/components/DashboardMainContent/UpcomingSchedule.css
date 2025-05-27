@@ -1,0 +1,36 @@
+.upcoming-schedule {
+  margin-top: 2rem;
+}
+
+.section-title {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #2e2e2e;
+}
+
+.day-group {
+  margin-bottom: 1.5rem;
+}
+
+.day-group h4 {
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+.card-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Responsive: stack cards on narrow screens */
+@media (max-width: 600px) {
+  .card-row {
+    flex-direction: column;
+  }
+  
+  .card-row > * {
+    min-width: 100% !important;
+    flex: none !important;
+  }
+}

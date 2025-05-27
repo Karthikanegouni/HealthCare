@@ -1,0 +1,60 @@
+.body-container {
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.body-image {
+  width: 100%;
+  height: auto;
+  background-color: #e8f6ff;
+  border-radius: 15px;
+  display: block;
+}
+
+
+.health-badge {
+  position: absolute;
+  padding: 8px 12px;
+  background-color: #542fce;
+  color: white;
+  border-radius: 10px;
+  font-size: 12px;
+  white-space: nowrap;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  user-select: none;
+}
+
+.heart {
+  top: 25%;
+  right: 20%;
+}
+
+.leg {
+  bottom: 25%;
+  left: 20%;
+  background-color: #00d2ff;
+  color: #000;
+}
+
+@media (max-width: 480px) {
+  .body-container {
+    max-width: 300px;
+  }
+
+  .health-badge {
+    font-size: 10px;
+    padding: 6px 10px;
+  }
+
+  .heart {
+    top: 25%;
+    right: 10%;
+  }
+
+  .leg {
+    bottom: 25%;
+    left: 10%;
+  }
+}
