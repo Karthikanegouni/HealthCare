@@ -50,6 +50,7 @@ This app is deployed using [Vercel](https://vercel.com/)
 **Live URL:** [ViewDemo](#)
 
 ## Screenshots
+![Screenshot from 2025-05-27 11-15-50](https://github.com/user-attachments/assets/dad4f14b-0b21-46f8-89dd-cbec9cdf91ba)
 
 
 
